@@ -16,12 +16,12 @@ jobs:
 
       # 安装依赖
       - name: install
-        run: yarn
+        run: npm install
 
       # 打包构建
       - name: build
-        run: yarn build
-
+        run:  npm run-script build
+    
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.0
